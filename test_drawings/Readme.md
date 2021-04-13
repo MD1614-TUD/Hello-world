@@ -1,1 +1,1 @@
-Add link to main directory [Hello_world](master/trafficgen/Readme.md)
+Add link to main directory [Hello_world](trafficgen/Readme.md)
