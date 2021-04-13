@@ -29,4 +29,4 @@ I am new to git-hub so learning to use it
 2. Add appropriate configurations to the `host_vars` files according to the roles needed to be deployed on them (see roles/\*/defaults/main.yml).
         
 	* `host_vars/podwhale5.bisdn.de.yml`: is an example config file for trex role
-        * `host_vars/podwhale2.bisdn.de.yml`: is an example config file for dpdk role
+	* `host_vars/podwhale2.bisdn.de.yml`: is an example config file for dpdk role
