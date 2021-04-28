@@ -19,6 +19,8 @@ I just love <p style="color: red;">bold text<p>
 
 2X __`n`__ G
 
+<font size="2"> This is my text number 2 </font>
+
 <font size="2"> your text </font>
 
 1. Add your new node to the `trex-servers` or `devices-under-test` group in the inventory file
