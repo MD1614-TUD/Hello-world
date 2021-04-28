@@ -17,6 +17,8 @@ I just love <p style="color: red;">bold text<p>
 
 <font style="color:#FF0000">This is some text!</font>
 
+2X **`n`** G
+
 1. Add your new node to the `trex-servers` or `devices-under-test` group in the inventory file
 `hosts.yml`:
 
