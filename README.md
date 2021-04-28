@@ -17,7 +17,7 @@ I just love <p style="color: red;">bold text<p>
 
 <font style="color:#FF0000">This is some text!</font>
 
-2X**`n`**G
+2X__`n`__G
 
 <font size="2"> your text </font>
 
