@@ -15,7 +15,7 @@ I just love <p style="color: red;">bold text<p>
 
 <font color="red">xxxorem Ipsum</font> 
 
-<font color="red">This is some text!</font>
+<font style="color:#FF0000">This is some text!</font>
 
 1. Add your new node to the `trex-servers` or `devices-under-test` group in the inventory file
 `hosts.yml`:
