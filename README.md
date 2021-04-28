@@ -17,7 +17,7 @@ I just love <p style="color: red;">bold text<p>
 
 <font style="color:#FF0000">This is some text!</font>
 
-2X<p>**`n`**</p> G
+2X<b>`n`</b> G
 
 <font size="2"> This is my text number 2 </font>
 
