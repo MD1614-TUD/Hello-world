@@ -11,7 +11,13 @@ I am new to git-hub so learning to use it
 
 <h1>Readme check</h1>
 
-I just love <p style="color: red;">bold text<p> 
+I just love <p style="color: red;">bold text<p>
+
+<font color="red">
+  
+	Lorem Ipsum
+  
+</font> 
 
 1. Add your new node to the `trex-servers` or `devices-under-test` group in the inventory file
 `hosts.yml`:
