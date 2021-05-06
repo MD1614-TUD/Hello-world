@@ -2,26 +2,20 @@
 Trying the tutorial Hello- World
 I am new to git-hub so learning to use it
 
-## Adding drawings for test
-- something
-	- something more
-		- <u>something</u> better flags: defines the vlan configuration flags for the VIDs in `vid`. This variable is a list of strings, each corresponding to a flag to add to the vlan configuration. See [Bridge_Vlan_flags](https://man7.org/linux/man-pages/man8/bridge.8.html#bridge_vlan_-_VLAN_filter_list) for all Roses are {: .gitlab-purple} **`y`**\*2X**`n`**G.
 
-		- [test_relative_link](test_drawings/Podwhale_setup_spirent.png)
+```
+cd /opt/trex/v2.88
+./t-rex-64 -i --iom 0
+```
+* where
+    * `-i`: is to start trex-server in interective mode
+    * `--iom`: defines the I/O mode. Can have - 0 (silent), 1 (normal), 2 (short) values.
+    * other helpfull cmd args:
+        * `-c`: defines the number of cpu cores for the trex-server. If not provided in
+        the cmd argument, it is taken from the `trex_cfg.yml` which has a default value `1`.
+        The number of cpus can be change also by modifying the `no_of_cpus` variable in the
+        `host_vars`
 
-<h1>Readme check</h1>
-
-I just love <p style="color: red;">bold text<p>
-
-<font color="red">xxxorem Ipsum</font> 
-
-<font style="color:#FF0000">This is some text!</font>
-
-2X<mark>**n**</mark>G
-
-<font size="2"> This is my text number 2 </font>
-
-<font size="2"> your text </font>
 
 1. Add your new node to the `trex-servers` or `devices-under-test` group in the inventory file
 `hosts.yml`:
