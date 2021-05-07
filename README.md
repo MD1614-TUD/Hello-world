@@ -50,29 +50,22 @@ cd /opt/trex/v2.88
         ```
         ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --skip-tags "trex" --tags "systemd_start_trex"
         ```
-
     * `systemd`: Tasks that interact with systemd (e.g. by calling systemctl) have this tag;
        You might wanna skip this tag when testing/developing in a docker container, e.g
-
-```
-ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd"
-```
-
+    ```
+    ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd"
+    ```
     * `systemd_start_trex`: Use this tag to trigger start of the trex-server.service, e.g.
 
-```
-ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_start_trex"
-```
-
+    ```
+    ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_start_trex"
+    ```
     * `systemd_restart_trex`: Use this tag to trigger restart of the trex-server.service, e.g.
-
-```
-ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_restart_trex"
-```
-
+    ```
+    ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_restart_trex"
+    ```
     * `systemd_stop_trex`: Use this tag to stop the trex-server.service, e.g.
-
-```
-ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_stop_trex"
-```
+    ```
+    ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_stop_trex"
+    ```
 
