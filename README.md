@@ -36,3 +36,45 @@ cd /opt/trex/v2.88
         
 	* `host_vars/podwhale5.bisdn.de.yml`: is an example config file for trex role
 	* `host_vars/podwhale2.bisdn.de.yml`: is an example config file for dpdk role
+
+
+* <ins>Tags:</ins>
+    * `trex`: All required tasks in this playbook to provision the trex role have this tag.
+        * This tag can be used to deploy trex-server without deploying it as a systemd service.
+
+```
+ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "trex"
+```
+
+        * This tag can be skipped if trex role is already deployed in the target machine and
+          the intention is to just have changes in trex service files systemd calls.
+
+```
+ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --skip-tags "trex" --tags "systemd_start_trex"
+```
+
+    * `systemd`: Tasks that interact with systemd (e.g. by calling systemctl) have this tag;
+       You might wanna skip this tag when testing/developing in a docker container, e.g
+
+```
+ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd"
+```
+
+    * `systemd_start_trex`: Use this tag to trigger start of the trex-server.service, e.g.
+
+```
+ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_start_trex"
+```
+
+    * `systemd_restart_trex`: Use this tag to trigger restart of the trex-server.service, e.g.
+
+```
+ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_restart_trex"
+```
+
+    * `systemd_stop_trex`: Use this tag to stop the trex-server.service, e.g.
+
+```
+ansible-playbook -l my-trex-host.cob.bisdn.de -i hosts.yml site.yml --tags "systemd_stop_trex"
+```
+
